@@ -3,6 +3,7 @@ import { Home } from "../pages/home"
 import { Link } from "react-router"
 
 
+
 export function meta({}: Route.MetaArgs){
     return[
         {title: "New React Router App"},

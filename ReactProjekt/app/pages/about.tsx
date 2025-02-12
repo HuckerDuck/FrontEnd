@@ -2,15 +2,10 @@ import { Link } from "react-router"
 
 export function About(){
     return (
-        <><div>
-            <p>Navigerat till About Sidan</p>
-
-
-
-        
+        <div>
+            Navigerat till Aboutsidan
         </div>
-        <Link to="/">Hem</Link></>
         
 
-    )
+    );
 }

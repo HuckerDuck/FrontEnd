@@ -1,32 +1,39 @@
+/**------------------------------------------------------------------------
+ *                           NAVIGATIONFÄLT
+ *------------------------------------------------------------------------**/
+
 .navBar{
+  
   background-color: beige;
 }
 
-.navbar ul{
+.navList{
   list-style-type: none;
-  padding: 3px;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 
 }
 
-.navbar ul li{
-  margin-right: 15px;
-  font-size: 33px;
+.navItem{
+  margin: 0 30px;
+  font-size: 20px;
 
-  
+
 }
 
-.navbar ul li:hover{
-  color: blueviolet;
-  cursor:pointer;
-}
-
-.navbar ul li a{
+.navItem a{
+  /* Tar bort färgen som ligger som standard */
   text-decoration: none;
+  color: black;
+  /* Transsition till hover effekt */
+  transition: 0,5s ease;
 
 }
 
-.navBar ul li a:hover{
+.navItem a:hover{
   color: blueviolet;
+  transform: scale(20);
 
 }
+

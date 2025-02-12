@@ -1,8 +1,10 @@
 import {isRouteErrorResponse,Link,Links,Meta,Outlet,Scripts,ScrollRestoration,} from "react-router";
 import type { Route } from "./+types/root";
 import "./app.css";
+import NavBar from "./componments/NavBar"
 
 export const links: Route.LinksFunction = () => [
+  
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -24,14 +26,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div>
-          <nav className="navBar"> 
-            <ul>
-              <li><Link to="/">Hem</Link></li>
-              <li><Link to="/about">About</Link></li>
-            </ul>
-          </nav>
+          <NavBar />
         </div>
-        {children}
+        <div>{children}</div>
         <ScrollRestoration />
         <Scripts />
       </body>
