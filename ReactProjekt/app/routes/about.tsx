@@ -1,7 +1,6 @@
 import type { Route } from "./+types/home";
-import { Home } from "../pages/home"
+import { About } from "../pages/about"
 import { Link } from "react-router"
-
 
 export function meta({}: Route.MetaArgs){
     return[
@@ -10,7 +9,7 @@ export function meta({}: Route.MetaArgs){
     ]
 }
 
-export default function HomePage() {
-    return <Home />
+export default function AboutRoute() {
+    return <About />
   }
   

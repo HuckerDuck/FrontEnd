@@ -1,15 +1,32 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.navBar{
+  background-color: beige;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+.navbar ul{
+  list-style-type: none;
+  padding: 3px;
+  margin: 0;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+}
+
+.navbar ul li{
+  margin-right: 15px;
+  font-size: 33px;
+
+  
+}
+
+.navbar ul li:hover{
+  color: blueviolet;
+  cursor:pointer;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+
+}
+
+.navBar ul li a:hover{
+  color: blueviolet;
+
 }
