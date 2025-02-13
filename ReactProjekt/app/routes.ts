@@ -1,7 +1,9 @@
 import { type RouteConfig, index, route } from "@react-router/dev/routes";
 
 export default [
-    index("routes/home.tsx"),  // Här definieras startsidan
+    // Startsidan
+    index("routes/home.tsx"),  
+    // Om mig sidan
     route("/about", "routes/about.tsx")  
 ] satisfies RouteConfig;
 

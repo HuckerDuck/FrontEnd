@@ -57,6 +57,7 @@
  .home-main{
   /* Lägger till en enkel border för att se vart innehåller ligger i förhållande till allt */
   border: solid 5px;
+  transition: background-color 0.2s ease;
   display: flex;
   flex-direction: column;
   /* Centerar allt innehåll Verikalt*/
@@ -68,6 +69,7 @@
   /* Centera texten */
   text-align: center;
   padding: 40px;
+  
 
 
  }
@@ -91,4 +93,68 @@
   font-size: 2rem;
 
  }
+
+  /**------------------------------------------------------------------------
+  *                           Aboutsidan 
+  *------------------------------------------------------------------------**/
+
+  /* Huvuddelen av allt */
+ .about-main{
+  /* Lägger till en enkel border för att se vart innehåller ligger i förhållande till allt */
+  border: solid 5px;
+  display: flex;
+  flex-direction: column;
+  /* Centerar allt innehåll Verikalt*/
+  justify-content: center;
+  /* Centrerar allt horisontellt */
+  align-items: center;
+  /* Gör att den täcker hela rutan */
+  height: 100vh;
+  /* Centera texten */
+  text-align: center;
+  padding: 40px;
+
+
+ }
+
+ /* Header */
+ .about-header{
+  /* Lägger till en enkel border runt */
+  border: darkblue solid 2px;
+  /* Skapar lite margial runt om */
+   margin: 30px;
+ }
+
+ /* Rubriktexten i header */
+ .about-header h1 {
+  font-size: 2.5rem;
+
+ }
+
+ /* Underrubrik i header */
+ .about-header h2 {
+  font-size: 2rem;
+
+ }
+
+ /**------------------------------------------------------------------------
+  *                           Media Query
+  *------------------------------------------------------------------------**/
+
+  /* För skärmar under 770 pixlar i bredd */
+  @media (max-width: 770px){
+    .navList{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navItem{
+      margin: 5px 0;
+    }
+
+    .home-main{
+      height: auto;
+      padding: 10px;
+    }
+  }
 

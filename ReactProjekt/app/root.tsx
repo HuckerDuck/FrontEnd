@@ -1,6 +1,6 @@
 import {isRouteErrorResponse,Link,Links,Meta,Outlet,Scripts,ScrollRestoration,} from "react-router";
 import type { Route } from "./+types/root";
-import "./app.css";
+import "./style/app.css";
 import NavBar from "./componments/NavBar"
 
 export const links: Route.LinksFunction = () => [
