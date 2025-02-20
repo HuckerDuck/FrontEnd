@@ -23,11 +23,14 @@ export function Home(){
             {/* Bodyn av huvudsidan */}
             <section className="home-body">
                 {/* En enkel räknare */}
-                <article>
+                <article className="simple-counter">
                     <h2>Enkel räknare</h2>
                     <SimpleCounter/>
-                    <RandomBackgroundChanger onColorChange={updateBackgroundColor}/>
+                </article>
 
+                <article className="background-changer">
+                    <h2>Klicka nedan och byt färg</h2>
+                    <RandomBackgroundChanger onColorChange={updateBackgroundColor}/>
                 </article>
             </section>
 

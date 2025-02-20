@@ -31,7 +31,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div>{children}</div>
         <ScrollRestoration />
         <Scripts />
+        
       </body>
+      <footer className="footer">
+          <h2>Skapad av Fredrik Menot Brauer</h2>
+        </footer>
     </html>
   );
 }

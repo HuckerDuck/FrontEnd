@@ -15,7 +15,7 @@ const RandomBackgroundChanger: React.FC<RandomBackgroundColorInterface> = ({onCo
         const letter ='0123456789ABCDEF';
         // Vi startar en varibel som kommer att börja med # som är starten av en hex
         let color = '#'; 
-        // Denna for kommer att köra 6 gånger då hex består av 6 tecken
+        // Denna for-loop kommer att köra 6 gånger 
         for (let i = 0; i < 6; i++) {
             color += letter [Math.floor(Math.random() * 16)]
         }

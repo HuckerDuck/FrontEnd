@@ -20,7 +20,5 @@ export function About(){
             </section>
 
         </main>
-        
-
     );
 }
